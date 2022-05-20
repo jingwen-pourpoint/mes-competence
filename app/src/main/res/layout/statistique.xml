@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/topCompetence_label"
+        style="@style/RegularTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Top Compétence:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/topCompetence_recycler"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/topCompetence_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/topCompetence_label"
+        app:layout_constraintBottom_toTopOf="@+id/niveauTotal_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/niveauTotal_label"
+        style="@style/RegularTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NiveauTotal:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topCompetence_recycler"
+        app:layout_constraintBottom_toTopOf="@+id/niveau_total"/>
+
+    <TextView
+        android:id="@+id/niveau_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/niveauTotal_label"
+        app:layout_constraintBottom_toTopOf="@+id/derniereCompetence_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/derniereCompetence_label"
+        style="@style/RegularTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Dernière compétence:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/niveau_total"
+        app:layout_constraintBottom_toTopOf="@+id/derniereCompetence"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/derniereCompetence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/derniereCompetence_label" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_page"
+        android:title="Accueil"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+
+    <item
+        android:id="@+id/statistique"
+        android:title="Statistique"
+        android:icon="@drawable/ic_statistique"
+        />
+    <item
+        android:id="@+id/new_competence"
+        android:title="Nouveau"
+        android:icon="@drawable/ic_baseline_add_24"
+        />
+
+
+</menu>

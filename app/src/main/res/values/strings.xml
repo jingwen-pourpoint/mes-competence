@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Mes Competences</string>
+    <string name="main_app_titles">Mes compétences </string>
+
+    // Home page
+    <string name="home_page_title">Ma liste de compétences </string>
+
+    // Popup detail
+    <string name="popup_detail_description">Description: </string>
+    <string name="popup_detail_tags">Tags: </string>
+    <string name="popup_detail_level">Niveau: </string>
+
+
+    // Nouvelle competences
+    <string name="new_comp_page_title">Nouvelle compétence</string>
+    // Nouvelle compétence/Form
+    <string name="new_comp_form_name_placeholder">Nom de la compétence</string>
+    <string name="new_comp_form_description_placeholder">Description</string>
+    <string name="new_comp_form_tags_placeholder">Tags</string>
+    <string name="new_comp_form_submit_button">Ajouter</string>
+
+    // Statistique
+    <string name="statistique">Mes statistiques</string>
+
+
+</resources>
